@@ -11,11 +11,11 @@ last_name: Bhardwaj
 
 # The Bio we wrote earlier
 description: >
-  Statistician and Quantitative Analyst specializing in high-performance 
+  Statistician and Quantitative Analyst specializing in high-performance
   statistical modeling and financial data engineering.
 
 # This enables the beautiful Dark Mode you wanted
-dark_mode: true 
+dark_mode: true
 
 # Branding for Holbard Group and The Kernel
 email: [anikaithbhardwaj@gmail.com]
@@ -89,9 +89,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+blog_name: the kernel # blog_name will be displayed in your blog page
+blog_description: The core essence of things
+permalink: /the-kernel/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
