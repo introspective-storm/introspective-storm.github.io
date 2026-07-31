@@ -19,15 +19,21 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/75;
+  @apply bg-slate-100 dark:bg-zinc-900;
+  @apply text-zinc-800 dark:text-indigo-100;
 }
 
 header {
   @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply bg-stone-100/75 dark:bg-stone-900/25;
-  @apply backdrop-blur-sm saturate-200;
+  @apply bg-transparent;
+  @apply backdrop-blur-md;
+  @apply text-indigo-500 dark:text-indigo-400;
 }
+
+h1 {@apply text-2xl font-bold text-indigo-500 dark:text-indigo-400}
+h3 {@apply text-xl font-bold text-indigo-500/70 dark:text-indigo-400/70}
+
+p {@apply text-zinc-800 dark:text-indigo-100}
 
 main {
   @apply flex-1 py-32;
@@ -40,7 +46,7 @@ footer {
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
   @apply prose-headings:font-semibold prose-p:font-serif;
-  @apply prose-headings:text-black prose-headings:dark:text-white;
+  @apply prose-headings:text-indigo-500/70 prose-headings:dark:text-indigo-400/70;
 }
 
 @layer utilities {
@@ -62,6 +68,11 @@ article {
 
 .animate.show {
   @apply opacity-100 translate-y-0;
+}
+
+.note {
+    @apply border rounded px-4 py-3 bg-slate-300 dark:bg-zinc-800;
+    @apply text-sm font-semibold
 }
 
 html #back-to-top {
